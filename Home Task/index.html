@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🎓 Student Registration Form</h1>
+        <form action="#" method="post">
+
+            <fieldset>
+                <legend>👤 Personal Information</legend>
+                <div class="row">
+
+                    <div class="input-box">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="studentid">Student ID</label>
+                        <input type="text" id="studentid" name="studentid" placeholder="Enter your student ID" required>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-box">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="input-box">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+
+                            <input type="radio" id="other" name="gender" value="Other">
+                            <label for="other">Other</label>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                        <label for="nationality">Nationality</label>
+                        <select id="nationality" name="nationality" required>
+                            <option selected>Select your nationality</option>
+                            <option>Bangladeshi</option>
+                            <option>Indian</option>
+                            <option>Pakistani</option>
+                            <option>Nepali</option>
+                            <option>Other</option>
+                        </select>
+
+                    </div>
+
+                    <div class="input-box">
+                        <label for="blood">Blood Group</label>
+                        <select id="blood" name="blood" required>
+                            <option selected>Select blood group</option>
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                            <option>AB+</option>
+                            <option>AB-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="full-box">
+                        <label for="address">Present Address</label>
+                        <textarea id="address" name="address"  placeholder="Enter your full address" required></textarea>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>📖 Academic Information</legend>
+                <div class="row">
+                    <div class="input-box">
+                        <label for="department">Department</label>
+                        <select id="department" name="department" required>
+                            <option selected>Select Department</option>
+                            <option>CSE</option>
+                            <option>EEE</option>
+                            <option>IPE</option>
+                            <option>BBA</option>
+                            <option>Law</option>
+                            <option>English</option>
+                            <option>Architecture</option>
+                        </select>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="semester">Semester</label>
+                        <select id="semester" name="semester" required>
+                            <option selected>Select Semester</option>
+                            <option>Fall</option>
+                            <option>Spring</option>
+                            <option>Summer</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="input-box">
+                        <label for="program">Program</label>
+                        <select id="program" name="program" required>
+                            <option selected>Select Program</option>
+                            <option>BSc</option>
+                            <option>BBA</option>
+                            <option>Diploma</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                         <label for="session">Session</label>
+                         <input type="text" id="session" name="session" placeholder="e.g. 2025–2026">
+                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="full-box">
+                        <label for="college">College</label>
+                        <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                        <label for="year">Passed Year</label>
+                        <select id="year" name="year" required>
+                            <option selected>Select Year</option>
+                            <option>2021</option>
+                            <option>2022</option>
+                            <option>2023</option>
+                            <option>2024</option>
+                            <option>2025</option>
+                            <option>2026</option>
+                        </select>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="cgpa">CGPA </label>
+                        <input type="text" id="cgpa" name="cgpa" placeholder="Enter CGPA" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>📝 Additional Information</legend>
+                <div class="row">
+                    <div class="input-box">
+                        <label>Select Skills </label>
+                        <div class="checkbox-group">
+                            <label for="html"><input type="checkbox" name="skills" id="html" value="HTML">HTML</label>
+                            <label for="css"><input type="checkbox" name="skills" id="css" value="CSS"> CSS</label>
+                            <label for="java"><input type="checkbox" name="skills" id="java" value="JavaScript">JavaScript</label> 
+                            <label for="c"><input type="checkbox" name="skills" id="c" value="C++"> C++</label>
+                            <label for="python"><input type="checkbox" name="skills" id="python" value="Python"> Python</label>
+                            <label for="communication"><input type="checkbox" name="skills" id="communication" value="Communication">Communication</label> 
+                            <label for="others"><input type="checkbox" name="skills" id="others" value="Other"> Other</label>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Select Hobbies </label>
+                        <div class="checkbox-group">
+                            <label for="reading"><input type="checkbox" name="hobby" id="reading" value="Reading"> Reading</label>                            
+                            <label for="gaming"><input type="checkbox" name="hobby" id="gaming" value="Gaming"> Gaming</label>                            
+                            <label for="sports"><input type="checkbox" name="hobby" id="sports" value="Sports"> Sports</label>                          
+                            <label for="music"><input type="checkbox" name="hobby" id="music" value="Music"> Music</label>                       
+                            <label for="travelling"><input type="checkbox" name="hobby" id="travelling" value="Travelling"> Travelling</label>                           
+                            <label for="coding"><input type="checkbox" name="hobby" id="coding" value="Coding"> Coding</label>                           
+                            <label for="other"><input type="checkbox" name="hobby" id="other" value="Other">Other</label>                           
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                        <label for="photo">Upload Photo</label>
+                        <input type="file" id="photo" name="photo">
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="declare">
+                <input type="checkbox" id="terms" name="declare" required>
+                <label for="terms">I hereby declare that all the information provided above is true and correct.</label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit"> Submit </button>
+                <button type="reset"> Reset </button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
