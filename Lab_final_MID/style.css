@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f2f2f2;
+    padding:30px;
+}
+
+.container{
+    width:900px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border:2px solid #0d6efd;
+    border-radius:8px;
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:25px;
+}
+
+fieldset{
+    border:2px solid #0d6efd;
+    border-radius:6px;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+legend{
+    color:#0d6efd;
+    font-weight:bold;
+    padding:0 10px;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+    margin-bottom:15px;
+}
+
+.input-box{
+    width:50%;
+}
+
+.full-box{
+    width:100%;
+}
+
+label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select,
+textarea{
+    width:100%;
+    padding:8px;
+    border:1px solid gray;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+}
+.radio-group{
+    margin-top:10px;
+}
+
+.radio-group label{
+    display:inline-block;
+    margin-right:20px;
+    font-weight:normal;
+}
+
+.radio-group input{
+    width:auto;
+    margin-right:5px;
+}
+
+.checkbox-group{
+    margin-top:10px;
+}
+
+.checkbox-group label{
+    display:inline-block;
+    width:180px;
+    margin-bottom:10px;
+    font-weight:normal;
+}
+
+.checkbox-group input{
+    width:auto;
+    margin-right:5px;
+}
+
+small{
+    color:red;
+    display:block;
+    margin-top:5px;
+}
+
+#result{
+    text-align:center;
+    color:green;
+    margin-top:20px;
+}
+
+.button-group{
+    text-align:center;
+    margin-top:20px;
+}
+
+button{
+    padding:10px 25px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    cursor:pointer;
+    margin:0 10px;
+}
+
+button[type="submit"]{
+    background:green;
+}
+
+button[type="reset"]{
+    background:red;
+}
+
+button:hover{
+    opacity:0.8;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Medical Appointment Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Medical Appointment Registration Form</h1>
+
+        <form id="appointmentForm">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="row">
+                    <div class="input-box">
+                        <label for="fname">First Name</label>
+                        <input type="text"id="fname" placeholder="Enter First Name">
+                        <small id="fnameError"></small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lname">Last Name</label>
+                        <input type="text"id="lname"placeholder="Enter Last Name">
+                        <small id="lnameError"></small>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                        <label for="email">Email</label>
+                        <input type="email"id="email"placeholder="Enter Email">
+                        <small id="emailError"></small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel"id="phone"placeholder="Enter Phone Number">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-box">
+                        <label for="password">Password</label>
+                        <input type="password"id="password"placeholder="Enter Password">
+                        <small id="passwordError"></small>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password"id="confirmPassword"placeholder="Confirm Password">
+                        <small id="confirmError"></small>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label>Gender</label>
+                <div class="radio-group">
+                    <label><input type="radio"name="gender"value="Male">Male</label>
+                    <label><input type="radio"name="gender"value="Female">Female</label>
+                    <label><input type="radio"name="gender"value="Other">Other</label>
+                </div>
+                    <small id="genderError"></small>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Appointment Information</legend>
+                 <div class="input-box">
+                    <label>Preferred Medical Service</label>               
+                <div class="checkbox-group">
+                    <label><input type="checkbox"name="service"value="General Checkup">General Checkup</label>
+                    <label><input type="checkbox"name="service"value="Dental">Dental</label>
+                    <label><input type="checkbox"name="service"value="Eye Care">Eye Care</label>
+                    <label><input type="checkbox"name="service"value="Cardiology">Cardiology</label>
+                </div>
+                <small id="serviceError"></small>
+                </div>
+                
+                <div class="row">
+                    <div class="input-box">
+                        <label for="department">Doctor Department</label>
+                        <select id="department">
+                            <option value="">Select Department</option>
+                            <option>Medicine</option>
+                            <option>Cardiology</option>
+                            <option>Neurology</option>
+                            <option>Orthopedics</option>
+                            <option>ENT</option>
+                        </select>
+                        <small id="departmentError"></small>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="full-box">
+                        <label for="description">Health Description</label>
+                        <textarea id="description"rows="5"placeholder="Write at least 20 characters"></textarea>
+                        <small id="descriptionError"></small>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <div class="button-group">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+
+            <h3 id="result"></h3>
+
+        </form>
+
+    </div>
+    <script src="logic.js"></script>
+</body>
+</html>
